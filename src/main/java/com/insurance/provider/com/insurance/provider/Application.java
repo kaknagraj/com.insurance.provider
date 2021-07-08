@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-@RequestMapping("insurance-service")
+@RequestMapping
 public class Application {
 
 		
-	@GetMapping("/getUpdatedInsuranceTypes")
+	@GetMapping("/")
 	public List<String> getInsuranceTypes(){
 		
 		 return Stream.of("Jeevan Anand","Jeevan Beema","Jeevan Saral","Jeevan anoop","naga plan").collect(Collectors.toList());
